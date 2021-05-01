@@ -1,0 +1,254 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #eee;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+   position: relative;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: fixed;
+    padding: 15px 20px;
+    left:0;
+    right: 0;
+    top:0;
+    background-color:#eee;
+
+
+}
+
+#header-img {
+    height: 100px;
+    width: 250px;
+
+}
+
+#nav-bar > a {
+   
+    font-size: 20px;
+    margin:5px;
+    text-decoration: none;
+    color: black; 
+    
+}
+
+.form-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 30px; 
+    max-width: 430px;
+    width: 100%;
+}
+
+input[id="email"] {
+    margin-bottom: 30px;
+    max-width: 300px;
+    width: 100%;
+    background-color: #fff;
+    padding:5px;
+    border: 1px solid #fff;
+    height: 30px;
+    border-radius: 5px;;
+}
+
+input[id="submit"] {
+    color: #000;
+    background-color: rgb(255, 222, 35);
+    border-style: none;
+    font-weight:bold;
+    padding: 10px 15px;
+    font-size: large;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#features {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#features .card {
+    display: flex;
+    margin: 20px 0;
+
+}
+#features .card .icon {
+    display: none;
+    color: #ff8c00;
+    width:100%;
+    max-width: 160px;
+}
+
+#features .card .content {
+    text-align: center;
+}
+
+.video-container {
+    margin: 20px auto;
+}
+
+
+#pricing {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing .cards {
+    margin: 15px 5px;
+    border: 2px solid rgb(87, 87, 87);
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#pricing .cards h2 {
+    background-color: rgba(221, 221, 221, 0.787);
+    padding: 15px 0;
+    margin: auto;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#pricing .cards strong {
+    font-size: 40px;
+}
+
+#pricing .cards p {
+    line-height: 10px;
+}
+
+#pricing .cards button {
+    background-color: rgb(255, 222, 35);
+    color: black;
+    padding: 10px 45px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: rgba(221, 221, 221, 0.787);;
+}
+
+footer .terms {
+    margin: 10px 10px;
+}
+
+
+footer .terms a {
+    margin: 0 7px;
+    text-decoration: none;
+    color: black;
+}
+
+footer > p {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 30px;
+    color:rgb(88, 88, 88);
+}
+
+@media (min-width:550px) {
+    #features .card .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #features .card .content {
+        text-align: left;
+    }
+}
+
+@media (min-width: 600px) {
+    #header{
+        flex-direction: row;
+        left: 5%;
+        right: 5%;
+        justify-content: space-between;
+    }
+    #header #nav-bar {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        justify-content: space-between;
+    }
+    #header #nav-bar a {
+        display: flex;
+        flex-direction: row;
+
+    }
+    #pricing {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    #header #nav-bar a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 700px) {
+    #header #nav-bar a {
+        font-size: 1em;
+    }
+    #header #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .video-container #video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 2;
+        max-width: 450px;
+
+    }
+}
